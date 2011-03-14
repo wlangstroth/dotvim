@@ -1,6 +1,6 @@
 " Needed on some linux distros.
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
-filetype off 
+filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
@@ -51,6 +51,10 @@ let g:clj_paren_rainbow=1
 
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile Capfile,Gemfile set filetype=ruby
+
+au BufEnter *.hs compiler ghc
+let g:haddock_browser = "open /Applications/Firefox.app"
+let g:ghc = "/usr/bin/ghc"
 
 " There has to be a better way to do this
 au BufRead,BufNewFile *.hs set comments=sl:{-,mb:--,elx:-}

@@ -5,7 +5,9 @@ Portable vim install. It's about time.
 
 Reminder: make sure to ln -s ~/.vim/.vimrc ~/.vimrc
 
-and if you want to update a submodule, git module update --init
+and if you want to update a submodule,
+
+  git module update --init
 
 To delete a submodule:
 
