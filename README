@@ -7,7 +7,7 @@ Reminder: make sure to ln -s ~/.vim/.vimrc ~/.vimrc
 
 and if you want to update a submodule,
 
-  git module update --init
+  git submodule update --init
 
 To delete a submodule:
 
