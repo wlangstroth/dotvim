@@ -52,7 +52,6 @@ let g:clj_paren_rainbow=1
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile Capfile,Gemfile set filetype=ruby
 
-au BufEnter *.hs compiler ghc
 let g:haddock_browser = "open /Applications/Firefox.app"
 let g:ghc = "/usr/bin/ghc"
 
