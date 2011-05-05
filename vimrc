@@ -16,6 +16,7 @@ set smarttab
 set incsearch
 set ruler
 
+
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>
 
@@ -51,8 +52,9 @@ let g:clj_paren_rainbow=1
 let g:lisp_rainbow=1
 
 au BufRead,BufNewFile *.less set filetype=less
-au BufRead,BufNewFile Capfile,Gemfile set filetype=ruby
+au BufRead,BufNewFile Capfile,Gemfile,Rakefile,*.thor set filetype=ruby
 au BufRead,BufNewFile *.rkt set filetype=racket
+au BufRead,BufNewFile *.scss set filetype=css
 
 let g:haddock_browser = "open /Applications/Firefox.app"
 let g:ghc = "/usr/bin/ghc"
@@ -63,4 +65,5 @@ au BufRead,BufNewFile *.clj set comments=sl:/*,mb:**,elx:*/
 
 map Q gq
 
-set formatprg=par\ -w78\ -j
+
+set formatprg=par\ -w78
