@@ -54,7 +54,7 @@ let g:lisp_rainbow=1
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile Capfile,Gemfile,Rakefile,*.thor set filetype=ruby
 au BufRead,BufNewFile *.rkt set filetype=racket
-au BufRead,BufNewFile *.json set filetype=javascript
+au BufRead,BufNewFile Jakefile,*.json set filetype=javascript
 
 let g:haddock_browser = "open /Applications/Firefox.app"
 let g:ghc = "/usr/bin/ghc"
