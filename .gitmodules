@@ -37,3 +37,6 @@
 [submodule "bundle/slim"]
 	path = bundle/slim
 	url = https://github.com/bbommarito/vim-slim.git
+[submodule "bundle/web-indent"]
+	path = bundle/web-indent
+	url = git://github.com/garbas/vim-web-indent.git
