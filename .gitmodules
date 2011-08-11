@@ -34,3 +34,6 @@
 [submodule "bundle/slim"]
 	path = bundle/slim
 	url = git://github.com/bbommarito/vim-slim.git
+[submodule "bundle/scss"]
+	path = bundle/scss
+	url = https://github.com/cakebaker/scss-syntax.vim.git
