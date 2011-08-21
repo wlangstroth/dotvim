@@ -37,3 +37,6 @@
 [submodule "bundle/haskell"]
 	path = bundle/haskell
 	url = https://github.com/wlangstroth/vim-haskell.git
+[submodule "bundle/cucumber"]
+	path = bundle/cucumber
+	url = git://github.com/tpope/vim-cucumber.git
