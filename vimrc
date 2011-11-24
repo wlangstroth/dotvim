@@ -56,9 +56,6 @@ au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.rkt set filetype=racket
 au BufRead,BufNewFile Jakefile,*.json set filetype=javascript
 
-let g:haddock_browser = "open /Applications/Firefox.app"
-let g:ghc = "/usr/bin/ghc"
-
 " There has to be a better way to do this
 au BufRead,BufNewFile *.hs set comments=sl:{-,mb:--,elx:-}
 au BufRead,BufNewFile *.clj set comments=sl:/*,mb:**,elx:*/
