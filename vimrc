@@ -8,7 +8,6 @@ syntax on
 
 set nocompatible
 set autoindent
-set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -16,6 +15,7 @@ set smarttab
 set incsearch
 set ruler
 
+filetype plugin indent on
 
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>
@@ -45,16 +45,14 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-filetype plugin indent on
-
 let clj_highlight_builtins=1
 let g:clj_paren_rainbow=1
 let g:lisp_rainbow=1
 
-au BufRead,BufNewFile Capfile,Gemfile,Rakefile,Thorfile,*.thor,*.ru set filetype=ruby
+au BufRead,BufNewFile Guardfile,Gemfile,Rakefile,Thorfile,*.thor,*.ru set filetype=ruby
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.rkt set filetype=racket
-au BufRead,BufNewFile Jakefile,*.json set filetype=javascript
+au BufRead,BufNewFile *.json set filetype=javascript
 
 " There has to be a better way to do this
 au BufRead,BufNewFile *.hs set comments=sl:{-,mb:--,elx:-}
