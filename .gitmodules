@@ -39,7 +39,7 @@
 	url = https://github.com/wlangstroth/vim-haskell.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
-	url = git://github.com/wlangstroth/vim-less
+	url = git://github.com/wlangstroth/vim-less.git
 [submodule "bundle/stylus"]
 	path = bundle/stylus
-	url = https://github.com/wavded/vim-stylus
+	url = git://github.com/wavded/vim-stylus.git
