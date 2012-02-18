@@ -8,6 +8,7 @@ set nobackup
 
 syntax on
 
+set hidden
 set nocompatible
 set autoindent
 set tabstop=2
@@ -47,18 +48,13 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-let clj_highlight_builtins=1
-let g:clj_paren_rainbow=1
-let g:lisp_rainbow=1
-
-au BufRead,BufNewFile Guardfile,Gemfile,Rakefile,Thorfile,*.thor,*.ru set filetype=ruby
+au BufRead,BufNewFile Gemfile,Rakefile,*.ru set filetype=ruby
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.rkt set filetype=racket
 au BufRead,BufNewFile *.json set filetype=javascript
 
 " There has to be a better way to do this
 au BufRead,BufNewFile *.hs set comments=sl:{-,mb:--,elx:-}
-au BufRead,BufNewFile *.clj set comments=sl:/*,mb:**,elx:*/
 
 map Q gq
 
