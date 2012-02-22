@@ -10,9 +10,6 @@
 [submodule "bundle/racket"]
 	path = bundle/racket
 	url = git://github.com/wlangstroth/vim-racket.git
-[submodule "bundle/liquid"]
-	path = bundle/liquid
-	url = git://github.com/tpope/vim-liquid.git
 [submodule "bundle/jade"]
 	path = bundle/jade
 	url = git://github.com/digitaltoad/vim-jade.git
@@ -40,12 +37,12 @@
 [submodule "bundle/haskell"]
 	path = bundle/haskell
 	url = https://github.com/wlangstroth/vim-haskell.git
-[submodule "bundle/cucumber"]
-	path = bundle/cucumber
-	url = git://github.com/tpope/vim-cucumber.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
-	url = git://github.com/wlangstroth/vim-less
+	url = git://github.com/wlangstroth/vim-less.git
 [submodule "bundle/stylus"]
 	path = bundle/stylus
-	url = https://github.com/wavded/vim-stylus
+	url = git://github.com/wavded/vim-stylus.git
+[submodule "bundle/scala"]
+	path = bundle/scala
+	url = git://github.com/derekwyatt/vim-scala.git
