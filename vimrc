@@ -4,6 +4,8 @@ filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+" There are three different free version control systems on my computer. I'm
+" good, thanks.
 set nobackup
 set noswapfile
 
@@ -19,6 +21,8 @@ set expandtab
 set smarttab
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 set ruler
 
 filetype plugin indent on
@@ -65,8 +69,7 @@ au BufRead,BufNewFile *.json set filetype=javascript
 " There has to be a better way to do this
 au BufRead,BufNewFile *.hs set comments=sl:{-,mb:--,elx:-}
 
-map Q gq
-
+" Just in case you open a read-only file, and want to save your changes.
 cmap w!! w !sudo tee % >/dev/null
 
 set formatprg=par\ -w80
