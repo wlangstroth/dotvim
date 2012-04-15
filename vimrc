@@ -3,6 +3,9 @@
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
+
+let mapleader = ","
 
 " There are three different free version control systems on my computer. I'm
 " good, thanks.
@@ -18,13 +21,11 @@ set copyindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set smarttab
 set incsearch
 set hlsearch
 set smartcase
 set ruler
 
-filetype plugin indent on
 
 nnoremap j gj
 nnoremap k gk
@@ -41,7 +42,6 @@ set grepprg=grep\ -nH\ $*
 
 let g:tex_flavor='latex'
 
-let mapleader = ","
 
 " Toggle spell checking on and off with `,s`
 nmap <silent> <leader>s :set spell!<CR>
@@ -49,7 +49,7 @@ nmap <silent> <leader>s :set spell!<CR>
 set listchars=tab:>-,trail:.
 set list
 
-" Make tabs and trailing space visible with `,l`
+" Make tabs and trailing space invisible with `,l`
 nmap <silent> <leader>l :set invlist list?<CR>
 nmap <silent> <leader>/ :nohlsearch<CR>
 
@@ -64,9 +64,6 @@ au BufRead,BufNewFile Gemfile,Rakefile,*.ru set filetype=ruby
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.rkt set filetype=racket
 au BufRead,BufNewFile *.json set filetype=javascript
-
-" There has to be a better way to do this
-au BufRead,BufNewFile *.hs set comments=sl:{-,mb:--,elx:-}
 
 " Just in case you open a read-only file, and want to save your changes.
 cmap w!! w !sudo tee % >/dev/null

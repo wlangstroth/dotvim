@@ -36,7 +36,7 @@
 	url = https://github.com/cakebaker/scss-syntax.vim.git
 [submodule "bundle/haskell"]
 	path = bundle/haskell
-	url = https://github.com/wlangstroth/vim-haskell.git
+	url = git://github.com/wlangstroth/vim-haskell.git
 [submodule "bundle/stylus"]
 	path = bundle/stylus
 	url = git://github.com/wavded/vim-stylus.git
