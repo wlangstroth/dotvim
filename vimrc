@@ -18,8 +18,8 @@ set hidden
 set nocompatible
 set autoindent
 set copyindent
-set tabstop=2
-set shiftwidth=2
+"set tabstop=2
+"set shiftwidth=2
 set expandtab
 set incsearch
 set hlsearch
