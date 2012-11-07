@@ -26,6 +26,7 @@ set hlsearch
 set smartcase
 set ruler
 
+set encoding=utf-8
 
 nnoremap j gj
 nnoremap k gk
