@@ -61,7 +61,7 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-au BufRead,BufNewFile Gemfile,Rakefile,Capfile,*.ru set filetype=ruby
+au BufRead,BufNewFile Gemfile,Rakefile,Guardfile,Capfile,*.ru set filetype=ruby
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.rkt set filetype=racket
 au BufRead,BufNewFile *.json set filetype=javascript
