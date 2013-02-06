@@ -21,8 +21,10 @@ set autoindent
 set copyindent
 set incsearch
 set hlsearch
-set smartcase
+set showmatch
+set ignorecase smartcase
 set ruler
+set scrolloff=3
 
 set encoding=utf-8
 
