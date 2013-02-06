@@ -65,6 +65,8 @@ au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.rkt set filetype=racket
 au BufRead,BufNewFile *.json set filetype=javascript
 
+autocmd FileType sml setlocal tabstop=4 shiftwidth=4
+
 " Just in case you open a read-only file, and want to save your changes.
 cmap w!! w !sudo tee % >/dev/null
 
