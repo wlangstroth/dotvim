@@ -5,10 +5,11 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+" Leader *********************************************************************
 let mapleader = ","
 
-" There are three different free version control systems on my computer. I'm
-" good, thanks.
+" There are three different free version control systems on my computer, so no
+" need for the backup.
 set nobackup
 set noswapfile
 
@@ -53,7 +54,7 @@ set list
 nmap <silent> <leader>l :set invlist list?<CR>
 nmap <silent> <leader>/ :nohlsearch<CR>
 
-" Set region to British English
+" Set region to British English to get Canadian spelling
 set spelllang=en_gb
 
 nnoremap <F2> :set invpaste paste?<CR>
@@ -63,7 +64,7 @@ set showmode
 au BufRead,BufNewFile Gemfile,Rakefile,Guardfile,Capfile,Vagrantfile,*.ru set filetype=ruby
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.rkt set filetype=racket
-au BufRead,BufNewFile *.json set filetype=javascript
+" au BufRead,BufNewFile *.json set filetype=javascript
 
 autocmd FileType sml setlocal tabstop=4 shiftwidth=4
 
