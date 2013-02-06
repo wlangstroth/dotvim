@@ -60,7 +60,7 @@ augroup specialtypes
   " clear autocommands
   autocmd!
 
-  au FileType ruby,haml,yaml,html,slim,javascript,sass set ai sw=2 sts=2 et
+  au FileType ruby,haml,yaml,html,javascript,sass set ai sw=2 sts=2 et
   au FileType python set sw=4 sts=4 et
 augroup END
 

@@ -30,7 +30,7 @@
 	url = git://github.com/tpope/vim-markdown
 [submodule "bundle/slim"]
 	path = bundle/slim
-	url = git://github.com/bbommarito/vim-slim.git
+	url = git://github.com/slim-template/vim-slim.git
 [submodule "bundle/scss"]
 	path = bundle/scss
 	url = git://github.com/cakebaker/scss-syntax.vim.git
@@ -50,7 +50,7 @@
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule "bundle/json"]
-	path = bundle/vim-json
+	path = bundle/json
 	url = git://github.com/leshill/vim-json.git
 [submodule "bundle/rails"]
 	path = bundle/rails
