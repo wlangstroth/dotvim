@@ -15,6 +15,8 @@ set noswapfile
 
 syntax on
 
+color will
+
 set hidden
 set nocompatible
 set autoindent
@@ -30,6 +32,12 @@ set encoding=utf-8
 
 nnoremap j gj
 nnoremap k gk
+
+" Move between splits quicker
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>
