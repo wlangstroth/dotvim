@@ -19,9 +19,6 @@ set hidden
 set nocompatible
 set autoindent
 set copyindent
-set tabstop=2
-set shiftwidth=2
-set expandtab
 set incsearch
 set hlsearch
 set smartcase
@@ -42,8 +39,6 @@ set showcmd
 set lazyredraw
 set grepprg=grep\ -nH\ $*
 
-let g:tex_flavor='latex'
-
 " Toggle spell checking on and off with `,s`
 nmap <silent> <leader>s :set spell!<CR>
 
@@ -61,12 +56,28 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-au BufRead,BufNewFile Gemfile,Rakefile,Guardfile,Capfile,Vagrantfile,*.ru set filetype=ruby
-au BufRead,BufNewFile *.less set filetype=less
-au BufRead,BufNewFile *.rkt set filetype=racket
-" au BufRead,BufNewFile *.json set filetype=javascript
+augroup specialtypes
+  " clear autocommands
+  autocmd!
 
-autocmd FileType sml setlocal tabstop=4 shiftwidth=4
+  au FileType ruby,haml,yaml,html,slim,javascript,sass set ai sw=2 sts=2 et
+  au FileType python set sw=4 sts=4 et
+augroup END
+
+if !exists("autocommandsLoaded")
+  let autocommandsLoaded = 1
+  au BufRead,BufNewFile *.less set filetype=less
+  au BufRead,BufNewFile *.rkt set filetype=racket
+
+  au BufRead,BufNewFile *.ru setlocal filetype=ruby
+  au BufRead,BufNewFile Vagrantfile setlocal filetype=ruby
+  au BufRead,BufNewFile Capfile setlocal filetype=ruby
+  au BufRead,BufNewFile Guardfile setlocal filetype=ruby
+  au BufRead,BufNewFile Rakefile setlocal filetype=ruby
+  au BufRead,BufNewFile Gemfile setlocal filetype=ruby
+
+  au FileType sml setlocal tabstop=4 shiftwidth=4
+endif
 
 " Just in case you open a read-only file, and want to save your changes.
 cmap w!! w !sudo tee % >/dev/null
