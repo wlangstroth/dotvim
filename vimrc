@@ -32,12 +32,6 @@ set encoding=utf-8
 nnoremap j gj
 nnoremap k gk
 
-" Move between splits quicker
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>
 
@@ -77,13 +71,6 @@ if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
   au BufRead,BufNewFile *.less set filetype=less
   au BufRead,BufNewFile *.rkt set filetype=racket
-
-  au BufRead,BufNewFile *.ru setlocal filetype=ruby
-  au BufRead,BufNewFile Vagrantfile setlocal filetype=ruby
-  au BufRead,BufNewFile Capfile setlocal filetype=ruby
-  au BufRead,BufNewFile Guardfile setlocal filetype=ruby
-  au BufRead,BufNewFile Rakefile setlocal filetype=ruby
-  au BufRead,BufNewFile Gemfile setlocal filetype=ruby
 
   au FileType sml setlocal tabstop=4 shiftwidth=4
 endif
