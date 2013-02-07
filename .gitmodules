@@ -55,3 +55,6 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/calendar"]
+	path = bundle/calendar
+	url = git://github.com/mattn/calendar-vim.git

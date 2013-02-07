@@ -1,19 +1,18 @@
 " Needed on some linux distros.
-" see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
+" see http://blog.adamlowe.com/2009/12/vim-destroys-all-other-rails-editors.html
 filetype off
-call pathogen#helptags()
+
+" Pathogen ********************************************************************
 call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-
-" Leader *********************************************************************
-let mapleader = ","
-
-" There are three different free version control systems on my computer, so no
-" need for the backup.
-set nobackup
-set noswapfile
 
 syntax on
+filetype plugin indent on
+
+" Leader **********************************************************************
+let mapleader = ","
+
+set nobackup
+set noswapfile
 
 color will
 
