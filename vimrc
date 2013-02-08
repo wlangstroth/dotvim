@@ -22,6 +22,9 @@ set autoindent
 set copyindent
 set incsearch
 set hlsearch
+set shiftwidth=4
+set tabstop=4
+set expandtab
 set showmatch
 set ignorecase smartcase
 set ruler
@@ -59,23 +62,19 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-augroup specialtypes
-  " clear autocommands
-  autocmd!
-
-  au FileType ruby,haml,yaml,html,javascript,sass set ai sw=2 sts=2 et
-  au FileType python set sw=4 sts=4 et
-augroup END
+au FileType ruby,haml,yaml,html,javascript,sass set ai sw=2 sts=2 et
 
 if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
   au BufRead,BufNewFile *.less set filetype=less
   au BufRead,BufNewFile *.rkt set filetype=racket
 
-  au FileType sml setlocal tabstop=4 shiftwidth=4
+  au FileType markdown,text setlocal fo+=t tw=80
 endif
 
 " Just in case you open a read-only file, and want to save your changes.
 cmap w!! w !sudo tee % >/dev/null
+
+let g:surround_35  = "#{\r}"   " #
 
 set formatprg=par\ -w80
