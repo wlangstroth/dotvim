@@ -53,6 +53,8 @@ set list
 
 " Make tabs and trailing space invisible with `,l`
 nmap <silent> <leader>l :set invlist list?<CR>
+
+" Hide search highlight
 nmap <silent> <leader>/ :nohlsearch<CR>
 
 " Set region to British English to get Canadian spelling
@@ -70,11 +72,8 @@ if !exists("autocommandsLoaded")
   au BufRead,BufNewFile *.rkt set filetype=racket
 
   au FileType markdown,text setlocal fo+=t tw=80
+
+  autocmd BufWritePre * :%s/\s\+$//e
 endif
-
-" Just in case you open a read-only file, and want to save your changes.
-cmap w!! w !sudo tee % >/dev/null
-
-let g:surround_35  = "#{\r}"   " #
 
 set formatprg=par\ -w80
