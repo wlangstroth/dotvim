@@ -64,12 +64,11 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-au FileType ruby,haml,yaml,html,javascript,sass set ai sw=2 sts=2 et
+au FileType ruby,haml,yaml,html,javascript,sass,scss,cucumber set ai sw=2 sts=2 et
 
 if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
   au BufRead,BufNewFile *.less set filetype=less
-  au BufRead,BufNewFile *.rkt set filetype=racket
 
   au FileType markdown,text setlocal fo+=t tw=80
 
