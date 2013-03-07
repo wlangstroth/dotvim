@@ -76,3 +76,5 @@ if !exists("autocommandsLoaded")
 endif
 
 set formatprg=par\ -w80
+
+let g:ctrlp_custom_ignore = 'git\|vendor'
