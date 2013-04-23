@@ -35,11 +35,12 @@ set encoding=utf-8
 nnoremap j gj
 nnoremap k gk
 
+" emacs-style end-of-line and beginning-of-line commands
+imap <c-e> <c-o>$
+imap <c-a> <c-o>^
+
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>
-
-set wildmenu
-set wildmode=list:longest
 
 set showcmd
 set lazyredraw
