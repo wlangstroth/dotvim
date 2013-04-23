@@ -85,10 +85,14 @@ endif
 
 set formatprg=par\ -w80
 
-let g:ctrlp_user_command = {
-    \ 'types': {
-        \ 1: ['.git', 'cd %s && git ls-files | grep -v  "png\|jpg\|jpeg\|gif"'],
-        \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-        \ },
-    \ 'fallback': 'find %s -type f'
+" -- CtrlP --------------------------------------------------------------------
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.(git|hg|svn)$',
+    \ 'file': '\v\.(jpg|jpeg|gif|png|so)$',
     \ }
+
+let g:ctrlp_user_command = 'find %s -type f'
+
+" -- Syntastic ----------------------------------------------------------------
+let g:syntastic_c_check_header = 1
