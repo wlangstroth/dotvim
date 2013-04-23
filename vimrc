@@ -57,6 +57,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+set splitright
 
 " Make tabs and trailing space invisible with `,l`
 nmap <silent> <leader>l :set invlist list?<CR>
