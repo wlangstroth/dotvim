@@ -39,6 +39,10 @@ nnoremap k gk
 imap <c-e> <c-o>$
 imap <c-a> <c-o>^
 
+" next search result right in the middle of the screen
+nmap n nzz
+nmap N Nzz
+
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>
 
