@@ -90,13 +90,9 @@ endif
 set formatprg=par\ -w80
 
 " -- CtrlP --------------------------------------------------------------------
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\.(git|hg|svn)$',
-    \ 'file': '\v\.(jpg|jpeg|gif|png|so)$',
-    \ }
-
 let g:ctrlp_user_command = 'find %s -type f'
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 " -- Syntastic ----------------------------------------------------------------
 let g:syntastic_c_check_header = 1
