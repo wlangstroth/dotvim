@@ -34,9 +34,6 @@
 [submodule "bundle/haskell"]
 	path = bundle/haskell
 	url = git://github.com/wlangstroth/vim-haskell.git
-[submodule "bundle/stylus"]
-	path = bundle/stylus
-	url = git://github.com/wavded/vim-stylus.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
