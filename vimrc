@@ -29,6 +29,7 @@ set showmatch
 set ignorecase smartcase
 set ruler
 set scrolloff=3
+set nofoldenable    " disable folding
 
 set encoding=utf-8
 
@@ -90,9 +91,8 @@ endif
 set formatprg=par\ -w80
 
 " -- CtrlP --------------------------------------------------------------------
-let g:ctrlp_user_command = 'find %s -type f'
-"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_user_command = 'find %s -type f | grep -ve ".git" -e ".hg" -e "node_modules"'
+let g:ctrlp_cmd = 'CtrlP'
 
 " -- Syntastic ----------------------------------------------------------------
 let g:syntastic_c_check_header = 1
