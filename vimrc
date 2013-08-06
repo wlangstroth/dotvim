@@ -96,3 +96,6 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " -- Syntastic ----------------------------------------------------------------
 let g:syntastic_c_check_header = 1
+let g:syntastic_mode_map = { 'mode': 'active',
+  \ 'active_filetypes': [],
+  \ 'passive_filetypes': ['html'] }
