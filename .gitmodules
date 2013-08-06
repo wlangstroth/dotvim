@@ -63,7 +63,13 @@
 	url = git://github.com/tpope/vim-commentary.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = git://github.com/wlangstroth/snipmate.vim.git
+	url = git@github.com:wlangstroth/snipmate.vim.git
 [submodule "bundle/ruby_single_test"]
 	path = bundle/ruby_single_test
-	url = git://github.com/wlangstroth/ruby_single_test.git
+	url = git@github.com:wlangstroth/ruby_single_test.git
+[submodule "vim-golang"]
+	path = vim-golang
+	url = https://github.com/jnwhiteh/vim-golang
+[submodule "bundle/golang"]
+	path = bundle/golang
+	url = https://github.com/jnwhiteh/vim-golang
