@@ -14,7 +14,9 @@ let mapleader = ","
 set nobackup
 set noswapfile
 
-color will
+" colors will
+
+let loaded_matchparen = 1
 
 set hidden
 set nocompatible
@@ -77,11 +79,12 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-au FileType ruby,haml,yaml,html,javascript,sass,scss,cucumber set ai sw=2 sts=2 et
+au FileType ruby,haml,yaml,html,javascript,coffeescript,sass,scss set ai sw=2 sts=2 et
 
 if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
   au BufRead,BufNewFile *.less set filetype=less
+  au BufRead,BufNewFile *.hamlc set filetype=haml
 
   au FileType markdown,text setlocal fo+=t tw=80
 
@@ -91,8 +94,11 @@ endif
 set formatprg=par\ -w80
 
 " -- CtrlP --------------------------------------------------------------------
-let g:ctrlp_user_command = 'find %s -type f | grep -ve ".git" -e ".hg" -e "node_modules"'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg)$',
+  \ 'file': '\v\.(so)$'
+  \}
 
 " -- Syntastic ----------------------------------------------------------------
 let g:syntastic_c_check_header = 1
