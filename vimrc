@@ -75,9 +75,8 @@ nmap <silent> <leader>/ :let @/ = ""<CR>
 " Set region to British English to get Canadian spelling
 set spelllang=en_gb
 
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-set showmode
+" Turn off C-p and C-n menu in insert mode
+set completeopt=
 
 au FileType ruby,haml,yaml,html,javascript,coffeescript,sass,scss set ai sw=2 sts=2 et
 
