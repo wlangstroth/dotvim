@@ -87,7 +87,7 @@ if !exists("autocommandsLoaded")
 
   au FileType markdown,text setlocal fo+=t tw=80
 
-  autocmd BufWritePre * :%s/\s\+$//e
+  autocmd BufWritePre * :%s/\s\+$//e " Remove trailing spaces before writing
 endif
 
 set formatprg=par\ -w80
