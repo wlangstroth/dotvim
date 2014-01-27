@@ -70,7 +70,7 @@ set splitright
 nmap <silent> <leader>l :set invlist list?<CR>
 
 " Hide search highlight
-nmap <silent> <leader>/ :nohlsearch<CR>
+nmap <silent> <leader>/ :let @/ = ""<CR>
 
 " Set region to British English to get Canadian spelling
 set spelllang=en_gb
