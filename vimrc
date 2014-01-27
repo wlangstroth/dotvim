@@ -14,7 +14,7 @@ let mapleader = ","
 set nobackup
 set noswapfile
 
-" colors will
+colors will
 
 let loaded_matchparen = 1
 
