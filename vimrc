@@ -39,8 +39,8 @@ nnoremap j gj
 nnoremap k gk
 
 " emacs-style end-of-line and beginning-of-line commands
-imap <c-e> <c-o>$
-imap <c-a> <c-o>^
+inoremap <c-e> <c-o>$
+inoremap <c-a> <c-o>^
 
 " next search result right in the middle of the screen
 nmap n nzz
