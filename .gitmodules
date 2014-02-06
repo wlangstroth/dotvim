@@ -73,3 +73,6 @@
 [submodule "bundle/golang"]
 	path = bundle/golang
 	url = https://github.com/jnwhiteh/vim-golang
+[submodule "bundle/easy-align"]
+	path = bundle/easy-align
+	url = https://github.com/junegunn/vim-easy-align
