@@ -1,3 +1,3 @@
 let g:colors_name = "will"
 
-hi Search         guifg=NONE        guibg=NONE        gui=underline ctermfg=0        ctermbg=12        cterm=underline
+hi Search         guifg=NONE        guibg=NONE        gui=underline ctermfg=0        ctermbg=14        cterm=NONE

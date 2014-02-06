@@ -24,14 +24,17 @@ set autoindent
 set copyindent
 set incsearch
 set hlsearch
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set showmatch
 set ignorecase smartcase
 set ruler
 set scrolloff=3
 set nofoldenable    " disable folding
+set nojoinspaces    " no double spaces after .
+set ttimeout
+set ttimeoutlen=100
 
 set encoding=utf-8
 
@@ -51,7 +54,7 @@ set whichwrap=b,s,h,l,<,>
 
 set showcmd
 set lazyredraw
-set grepprg=grep\ -nH\ $*
+set grepprg=grep\ -nH\ $* " XXX Change to ag command
 
 " Toggle spell checking on and off with `,s`
 nmap <silent> <leader>s :set spell!<CR>
@@ -78,7 +81,7 @@ set spelllang=en_gb
 " Turn off C-p and C-n menu in insert mode
 set completeopt=
 
-au FileType ruby,haml,yaml,html,javascript,coffeescript,sass,scss set ai sw=2 sts=2 et
+au FileType c,css set ai sw=4 sts=4 et
 
 if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
