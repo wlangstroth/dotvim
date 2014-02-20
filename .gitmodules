@@ -76,3 +76,6 @@
 [submodule "bundle/easy-align"]
 	path = bundle/easy-align
 	url = https://github.com/junegunn/vim-easy-align
+[submodule "bundle/rspec"]
+	path = bundle/rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
