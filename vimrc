@@ -41,6 +41,9 @@ set encoding=utf-8
 nnoremap j gj
 nnoremap k gk
 
+" close a buffer without closing the split
+nnoremap <c-c> :bp\|bd #<CR>
+
 " emacs-style end-of-line and beginning-of-line commands
 inoremap <c-e> <c-o>$
 inoremap <c-a> <c-o>^
@@ -92,6 +95,12 @@ if !exists("autocommandsLoaded")
 
   autocmd BufWritePre * :%s/\s\+$//e " Remove trailing spaces before writing
 endif
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 set formatprg=par\ -w80
 
