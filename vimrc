@@ -84,12 +84,16 @@ set spelllang=en_gb
 " Turn off C-p and C-n menu in insert mode
 set completeopt=
 
-au FileType c,css set ai sw=4 sts=4 et
+au FileType html set omnifunc=htmlcomplete#CompleteTags
+au FileType css set omnifunc=csscomplete#CompleteCSS
+
+au FileType c,css,haskell set ai sw=4 sts=4 et
 
 if !exists("autocommandsLoaded")
   let autocommandsLoaded = 1
   au BufRead,BufNewFile *.less set filetype=less
   au BufRead,BufNewFile *.hamlc set filetype=haml
+  au BufRead,BufNewFile *.tpl set filetype=html
 
   au FileType markdown,text setlocal fo+=t tw=80
 
@@ -107,7 +111,7 @@ set formatprg=par\ -w80
 " -- CtrlP --------------------------------------------------------------------
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg)$',
+  \ 'dir':  '\v(\.git|\.hg|_darcs|dist)$',
   \ 'file': '\v\.(so)$'
   \}
 
