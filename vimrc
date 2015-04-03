@@ -120,6 +120,7 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_mode_map = { 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['html'] }
+"let g:syntastic_debug = 3
 
 " -- Rspec --------------------------------------------------------------------
 let g:rspec_command = "!clear && bundle exec rspec {spec}"
